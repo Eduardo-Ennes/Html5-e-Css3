@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias de imagem</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../imagens/menor.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../imagens/media.png" type="image/png">
+        <img src="../imagens/grande.png" alt="Imagem Flexível">
+    </picture>
+
+
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <p><strong>Primeira forma: </strong></p>
+    <audio src="../Musica/gustavo_mioto_anti_amor.mp3" controls autoplay></audio>
+    <!-- controls trata de exibir ou não controles como o botão de reproduzir/pausar ou o botão deslizante de ajuste de volume. -->
+    <!-- autoplay para que o audio reproduza automaticamente -->
+
+    <br>
+    <p><strong>Segunda forma:</strong></p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="../Musica/gustavo_mioto_anti_amor.mp3" type="audio/mpeg">
+        <source src="../Musica/gustavo_mioto_anti_amor.ogg" type="audio/ogg">
+        <source src="../Musica/gustavo_mioto_anti_amor.wav" type="audio/wav">
+        <p>Caso não consiga escutar a musica,<a href="../Musica/gustavo_mioto_anti_amor.mp3">Clique aqui para baixar.</a></p>
+    </audio>
+    <!-- Seguir essa referencia para audio e na seguinte ordem, ele busca a compatibildade para os computadores em ordem, caso ele não consiga encontrar a compatibilidades parecera o link para baixar o audio. Por mais que esteja o WAV no exemplo, não usa-lo por ser muito pesado e irá interferir diretamente na pagina.     
+         
+    No preload nunca deixar vazio ou usar 'AUTO', apenas usar 'None' ou 'Metadata' 
+    loop: é para a musica recomeçar sempre quando ela termina -->
+</body>
+</html>

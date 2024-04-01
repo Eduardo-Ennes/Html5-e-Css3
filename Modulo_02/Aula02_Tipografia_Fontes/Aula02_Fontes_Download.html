@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'dia-bruxa';
+            src: url('Fonts/Witch Magic Italic.otf') format('opentype'),
+            url('Fonts/Witch Magic Italic.ttf') format('truetype');
+            /* Tipos de Fomart() 
+            - opentype(otf)
+            - truetype(ttf)
+            - embedded-opentybe
+            - truetype-aat (apple advanced typography)
+            - svg
+            */
+        }
+        main{
+            background-color: rgb(102, 102, 241);
+            width: 500px;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 3px 3px 5px black;
+            text-align: justify;
+            margin: auto;
+        }
+        h1{
+            font-size: 32px;
+            font-family: 'dia-bruxa';
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Titulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, temporibus accusamus! Suscipit, soluta. Alias aliquid odio repellendus magnam, facere voluptatum vel ratione enim debitis laboriosam possimus voluptas corrupti, aut ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatem velit nisi temporibus recusandae porro dolores mollitia sed! Vel nesciunt eveniet nam dignissimos rerum officiis vero doloribus saepe corrupti quam.</p>
+    </main>
+</body>
+</html>
