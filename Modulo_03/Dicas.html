@@ -94,14 +94,14 @@ text-indent: --> Cria uma identação (Igual o espaço que há nos paragrafos)
 text-shadow: --> funciona da mesma forma do que a box-shadow, porem, este serve para textos 
 
 
-backgrounds:
-background = é a sigla que se usa para manipular o fundo do site 
+backgrounds: 
 background-color = colocar uma cor no fundo do site 
-background-image: linear-gradient(); --> para fazert degrade 
+background-image: linear-gradient(); --> para fazert degrade
+background-position: ; --> Define o local de posicionamento na pagina 
 background-repeat: no-repeat; --> não deixa a imagem se repetir
-background-size: ; --> controla o tamanho da imagem 
-background-position: ; --> Define o local de posicionamento na pagina
-background-size: cover; --> forma de responsividade para imagem de fundo, porem ela corta. Melhor forma até agora
+background-size: cover; --> pode definir o tamanho da imagem 
+background-attachment: fixed; --> fixa a imagem 100% no corpo
+background: 1°Color 2°Image 3°Position 4°Repeat 5°Attachment;
 
 
 Caixas: 
@@ -127,6 +127,15 @@ font: 1°font-style 2°font-weight 3°font-size 4°font-family;
 3° font-size --> estabelece o tamanho da fonte 
 4° font-family --> Define o tipo das letras
 ! podem ser usadas separadamente, porem, a "font" engloba todas, so deve-se conhecer a ordem certinha.
+
+
+Poisition:
+position: Relative; --> Basicamente todas as caixas ja vem com essa configuração
+position: Absolut; --> Quando usamos essa configuração habilitamos a caixa que está contida dentro de outra a ser posicionada em qualquer lugar dentro da caixa em que está contida. Desbloqueamos por ex: (left, right, top, bottom) podendo move-la em todas as direções. Isso é usado para centralizar imagens dentro de caixas. Exemplo no "Modulo03/Aula_01/Aula_05."
+
+
+Transform: 
+translate: ; --> Para posicinar uma caixa dentro de outra
 
 
 Pseudo-Classes: --> São palavras que definem estados de elementos dentro da html

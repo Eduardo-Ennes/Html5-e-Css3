@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movendo caixa dentro de outra caixa</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #p1{
+            position: relative;
+            height: 400px;
+            width: 400px;
+            background-size: 100% 100%;
+            background-color: white;
+            background-image: url(Imagens/target001.png);
+            margin: auto;
+            margin-top: 100px;
+        }
+        #p2{
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: rgb(104, 104, 248);
+            transform: translate(117%, 117%);
+            
+        }
+    </style>
+</head>
+<body>
+    <main id="p1">
+        <div id="p2">
+
+        </div>
+    </main>
+</body>
+</html>
