@@ -1,0 +1,158 @@
+
+    HTML: 
+
+ SITE PARA ICONE: https://favicon.io/favicon-generator/
+ SITE PARA EMOJIS: https://emojipedia.org/flags
+ SITE PARA IMAGENS E VIDEOS: https://www.pexels.com/pt-br
+ SITE PARA PALETAS DE CORES: https://color.adobe.com/, https://coolors.com, https://paletton.com/
+ SITE PARA FONTES: https://www.fonts.google.com
+ SITE PARA FONTES DOWNLOAD: https://www.dafont.com/pt/
+ SITE PARA AJUDAR A PLANEJAR O SITE: mockflow.com
+ utf-8 -> codigo padrão para colocar na linguagem brasielira em qualquer linguagem.
+ SITE DE GERADOR DE QR-CODE: https://www.qr-code-generator.com/
+ 
+ SITE PARA BAIXAR EXTENÇÕES DO GOOGLE: CHROME WEB GOOGLE
+ Extenções baixadas no google: 
+ - ColorZilla: para identificar cores 
+ - FontNinja: para identificar fontes 
+ - Window Reizer: mostra o tamnho da tela 
+
+
+
+principais formas de formatação: 
+<strong> negrito <strong>
+<em> itálico <em>
+<address> Endereço <address>
+<hr> Linha Horizontal
+<br> Quebra de Linha 
+<mark> Marca texto <mark>
+<del> Texto excluido </del>
+<ins> Texto incluido </ins> -> Sublinhado
+<sub> subscreve algo </sub>
+<sup> inverso do sub </sup>
+<code> Para codigo fonte </code>
+<abbr>Quando passa o mouse em cima de uma palavra e mostar um conteudo</abbr>
+
+
+
+Tags de organização do corpo do site:
+<header>representa um grupo de suporte introdutório ou navegacional.</header>
+<main>define o conteúdo principal dentro do "body" em seu documento ou aplicação.</main>
+<footer>diz respeito ao rodapé de nosso site</footer>
+<nav>representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.</nav>
+<article>O elemento article especifica conteúdo independente e autônomo.</article>
+<section>é utilizada para marcar as seções de conteúdo de uma página.</section>
+<aside>define um bloco de conteúdo que faz referência ao conteúdo principal que o cerca, pode estar ou não em uma barra lateral (sidebar) exibindo informações contextuais, assuntos relacionados, conteúdo publicitário ou um grupo de navegação secundária.</aside>
+
+
+
+Link:
+<a href="Aqui se coloca o link" target="_blank"> Palvra ou Texto que irá levar atá a pagina</a>
+../ -> para procurar a pagina na pasta anterior
+./ -> A propria pagina 
+
+
+
+Listas: 
+<li> Usado para colocar algo na lista </li>
+<ol type="1"> Listas Ordenadas </ol> -> em ordem, type e para escolher o tipo da númeração
+<ul> Lista não ordenada </ul>
+<dl> Lista de definição </dl>
+list-style-position: inside; --> arruma a lista dentro da caixa 
+list-style-type --> muda o simbolo da lista (Não é compativel com todos os tipos de navegares.)
+columns --> divide a lista em partes 
+
+
+Imagens, audio e videos colsultar na:
+--> aula 10:
+--> Conteudo mais avançado. 
+
+
+ESPECIAIS: 
+&lt;tag&gt; -> Para mostrar a tag na web 
+& -> para colocar simbolos 
+&#xcodigodoemoji -> para colocar um emoji
+
+
+
+    CSS: 
+height = altura
+width = largura
+min-width = Largura minima (usado em reponsividade "modulo 02")
+max-width = Largura maxima (usado em responsividade "modulo 02") 
+weight = peso
+right = direita
+lefth = esquerda  
+display: inline-block; --> coloca os objetos um do lado da outro
+line-height --> configura o espaçamento entre as linhas
+
+
+text: 
+text-align: ; --> Para alinhar o texto
+text-decorantion --> usado para formartar os texto como(sublinhado e entre outros.)
+text-indent: --> Cria uma identação (Igual o espaço que há nos paragrafos)
+text-shadow: --> funciona da mesma forma do que a box-shadow, porem, este serve para textos 
+
+
+background:
+background = é a sigla que se usa para manipular o fundo do site 
+background-color = colocar uma cor no fundo do site 
+background-image: linear-gradient(); --> para fazert degrade 
+background-repeat: no-repeat; --> não deixa a imagem se repetir
+background-size: ; --> controla o tamanho da imagem 
+
+
+Box: 
+Border: 1°Width 2°style 3°Color --> para personalizar as bordas de uma caixa
+border-image: 1°url('NomeDaFoto') 2°width 3°type(repeat); --> para usar bordas com imagens, muito pouco usado, porem, para que ela funciona deve-se ter uma "Border" primeiro. ex de Border está logo acima.
+outline: 1°largura 2°Tipo 3°Cor
+box-shadow: 1°direira 2°embaixo 3°sombreado = Cria sombra no objeto
+margin: auto; --> Centraliza o conteudo independende do seu tamanho
+border-radius: --> arredonda as pontas 
+(/* padding --> distancia a borda das letras */  
+padding-top: --> parte de cima 
+padding-right: -- parte da direita
+padding-bottom: --> parte de baixo
+padding-left: --> parte da esquerda
+padding: --> executa todos os lados juntos, se for valores diferentes seguir a sequencia acima) 
+
+
+fontes:
+font --> engloba todos de uma forma simplificada.    (logica logo abaixo:) 
+font: 1°font-style 2°font-weight 3°font-size 4°font-family;
+1° font-style --> pode colocar as letras em italico por exemplo 
+2° font-weight --> define o peso da letra (lighter, normal, bold or bolder )
+3° font-size --> estabelece o tamanho da fonte 
+4° font-family --> Define o tipo das letras
+! podem ser usadas separadamente, porem, a "font" engloba todas, so deve-se conhecer a ordem certinha.
+
+
+Pseudo-Classes: --> São palavras que definem estados de elementos dentro da html
+:Hover --> faz um interação quando o mouse está em cima do objeto
+:Visited --> quando o objeto foi visitado
+:actived --> quando clica no objeto
+:root{} --> local para declarar variaveis, exemplo no CSS do projeto Android modulo 02 
+
+
+Pseudo-Elementos: --> insere objetos nos conteudos.
+::after 
+::before
+transition-duration --> funciona como um sleep, contrala o tempo para mostra quando o mouse passa por cima.
+
+
+@: 
+@charset --> para colocar nos padrões de linguagem.
+@font-face --> Permite o controle sobre recursos tipográficos avançados em fontes OpenType. "exemplos: no modulo 2 aula de tipografias e na CSS do projeto Android". 
+
+
+
+Simbolos:
+# = id
+. = class 
+: = Pseudo-Classes 
+:: = Pseudo-Elementos 
+> = children 
+
+
+Atalhos no teclado:
+ctrl + espaço -> mostra as opções de arquivos para inserir
