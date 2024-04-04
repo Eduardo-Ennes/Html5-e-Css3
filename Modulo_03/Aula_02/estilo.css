@@ -49,14 +49,14 @@ a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 1.6em;
+    line-height: 1.8em;
     padding-left: 30px;
     font-family: var(--font3);
     font-size: 3.5vw;
 }
 
 section > p{
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 section.imagem > p{
