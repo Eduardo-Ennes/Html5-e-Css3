@@ -32,13 +32,6 @@ principais formas de formatação:
 <sup> inverso do sub </sup>
 <code> Para codigo fonte </code>
 <abbr> Quando passa o mouse em cima de uma palavra e mostar um conteudo </abbr>
-<table> Tabela </table>
-    <thead>
-        <caption> Titulo da tabela </caption>
-    <tbody>
-    <tfoot>
-        <tr> Linha da tabela </tr>
-            <td> Dado da tabela </td>
 
 
 
@@ -70,9 +63,11 @@ list-style-type --> muda o simbolo da lista (Não é compativel com todos os tip
 columns --> divide a lista em partes 
 
 
+
 Imagens, audio e videos colsultar na:
 --> aula 10:
 --> Conteudo mais avançado. 
+
 
 
 ESPECIAIS: 
@@ -92,8 +87,7 @@ right = direita
 lefth = esquerda  
 display: inline-block; --> coloca os objetos um do lado da outro
 line-height --> configura o espaçamento entre as linhas
-colspan="" --> Duplica a cedula para colunas(mais usado em listas)
-rowspan="" --> Duplica a cedula para linhas(mais usado em listas)
+
 
 
 text: 
@@ -105,6 +99,7 @@ text-shadow: --> funciona da mesma forma do que a box-shadow, porem, este serve 
 text-transform: ; --> da estilo a um texto colocando em maiusculas ou minusculas.
 
 
+
 backgrounds: 
 background-color = colocar uma cor no fundo do site 
 background-image: linear-gradient(); --> para fazert degrade
@@ -113,6 +108,7 @@ background-repeat: no-repeat; --> não deixa a imagem se repetir
 background-size: cover; --> pode definir o tamanho da imagem 
 background-attachment: fixed; --> fixa a imagem 100% no corpo
 background: 1°Color 2°Image 3°Position 4°Repeat 5°Attachment;
+
 
 
 Caixas: 
@@ -131,6 +127,21 @@ padding-left: --> parte da esquerda
 padding: --> executa todos os lados juntos, se for valores diferentes seguir a sequencia acima) 
 
 
+
+Tabela:
+<table> Tabela </table>
+    <thead>
+        <caption> Titulo da tabela </caption>
+    <tbody>
+    <tfoot>
+        <tr> Linha da tabela </tr>
+            <td> Dado da tabela </td>
+verflow-x overflow-y --> usado para responsividade com tabelas, overflow significa conteudo que transborda, cria uma rolagem apenas para a lista que fica maior do que a tela.
+colspan="" --> Duplica a cedula para colunas(mais usado em listas)
+rowspan="" --> Duplica a cedula para linhas(mais usado em listas)
+
+
+
 fontes:
 font --> engloba todos de uma forma simplificada.    (logica logo abaixo:) 
 font: 1°font-style 2°font-weight 3°font-size 4°font-family;
@@ -143,13 +154,16 @@ font-size: 4vw; --> usando o "vw" e "vh" as letras ficam com tamanhos responsivo
 font-variant: ; --> algumas opções para colocar estilos a um texto.
 
 
+
 Poisition:
 position: Relative; --> Basicamente todas as caixas ja vem com essa configuração
 position: Absolut; --> Quando usamos essa configuração habilitamos a caixa que está contida dentro de outra a ser posicionada em qualquer lugar dentro da caixa em que está contida. Desbloqueamos por ex: (left, right, top, bottom) podendo move-la em todas as direções. Isso é usado para centralizar imagens dentro de caixas. Exemplo no "Modulo03/Aula_01/Aula_05."
 
 
+
 Transform: 
 translate: ; --> Para posicinar uma caixa dentro de outra
+
 
 
 Pseudo-Classes: --> São palavras que definem estados de elementos dentro da html
@@ -160,10 +174,12 @@ Pseudo-Classes: --> São palavras que definem estados de elementos dentro da htm
 :nth-child(2n) --> Efeito zebrado em tabelas
 
 
+
 Pseudo-Elementos: --> insere objetos nos conteudos.
 ::after 
 ::before
 transition-duration --> funciona como um sleep, contrala o tempo para mostra quando o mouse passa por cima.
+
 
 
 @: 
