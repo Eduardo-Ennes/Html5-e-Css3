@@ -168,6 +168,7 @@ position: Absolut; --> Quando usamos essa configuração habilitamos a caixa que
 Transform: 
 translate: ; --> Para posicinar uma caixa dentro de outra
 transition: nome 0.3s; --> funciona como um sleep no python
+transition-duration --> funciona como um sleep, contrala o tempo para mostra quando o mouse passa por cima.
 
 
 
@@ -183,7 +184,12 @@ Pseudo-Classes: --> São palavras que definem estados de elementos dentro da htm
 Pseudo-Elementos: --> insere objetos nos conteudos.
 ::after 
 ::before
-transition-duration --> funciona como um sleep, contrala o tempo para mostra quando o mouse passa por cima.
+
+::-webkit-scrollbar{ 
+    height: 0px;
+    width: 0px;
+} --> esconde a barra de rolagem 
+
 
 
 
