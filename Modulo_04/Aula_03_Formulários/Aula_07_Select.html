@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando formularios</title>
+</head>
+<body>
+    <form action="python.exe.py" method="get" autocomplete="on">
+        <p>
+            <label for="iestado">Estados: </label>
+            <select name="estado" id="iestado">
+                <option value="">--- Escolha --- </option>
+                <optgroup label="Refião sudeste">
+                    <option value="MG">Minas Gerias</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="idprof">
+            <datalist id="idprof">
+                <option value="Des">Desenvolvedor Web</option>
+                <option value="Ciber">Cibersegurança</option>
+                <option value="Ana.list">Analista de Dados</option>
+                <option value="Eng.aero">Engenheiro Áero Espacial</option>
+                <option value="Astro">Astronauta</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="itext">Discrição: </label><br>
+            <textarea name="texto" id="itext" cols="30" rows="10">Descreva um pouco sobre você de forma objetiva: </textarea>
+        </p>
+    </form>
+</body>
+</html>
