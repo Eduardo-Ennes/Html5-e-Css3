@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css" media="all">
-    <link rel="stylesheet" href="retrato.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="paisagem.css" media="screen and (orientation: landscape)">
     <title>Midia query</title>
+    <style>
+        /* Declarações gerais */
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left bottom ;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Declarações retrato */
+        @media screen and (orientation: portrait) {
+            body{
+                background-image: url('imagens/cev-portrait.jpg');
+                background-position: center bottom;
+            }
+        }
+        /* Declaração paisagem */
+        @media screen and (orientation: landscape) {
+            body{
+                background-image: url('imagens/cev-landscape.jpg');
+                background-position: left bottom;
+            }
+        }
+    </style>
 </head>
 <body>
 </body>
