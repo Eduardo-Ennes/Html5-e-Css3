@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    height: 100vh;
+}
+
+/* Cabeça */
+
+header{
+    background-color: rgb(172, 171, 171);
+}
+
+h1{
+    padding: 10px; 
+    text-align: center;
+}
+
+p#home{
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    padding-left: 628px;
+}
+
+p#home:hover{
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    border: 0.5px rgb(172, 171, 171) solid;
+}
+
+a:hover{
+    font-size: 1.1em;
+}
+
+/* Corpo */
+
+main{
+    width: 80vw;
+    margin: auto;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+}
+
+h2{
+    padding: 10px;
+}
+
+p{
+    margin-top: 15px;
+    text-align: justify;
+    text-indent: 20px;
+}
