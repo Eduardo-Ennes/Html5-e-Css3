@@ -25,7 +25,7 @@ p#home{
     background-color: gray;
     padding: 10px;
     color: white;
-    padding-left: 628px;
+    text-align: center;
 }
 
 p#home:hover{

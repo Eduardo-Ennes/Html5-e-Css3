@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
     <title>Mídia query</title>
 </head>
-<body>
+<body onresize="mudou()">
     <header>
         <h1>Meu site</h1>
-        <p id="home" onclick="mostrar()" >HOME</p>
+        <p id="home" onclick="mostrar()">HOME</p>
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -33,10 +34,18 @@
         </article>
     </main>
     <script>
+        function mudou(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
         function mostrar(){
             if (itens.style.display == 'none'){
                 itens.style.display = 'block'
-            } else{
+            } else {
                 itens.style.display = 'none'
             }
         }
